@@ -71,6 +71,7 @@
     localStorage.setItem("pwd",confirmpass);
 
     window.location.href="login.html";
+    alert("you have successfully signed up..")
     
   })
 
