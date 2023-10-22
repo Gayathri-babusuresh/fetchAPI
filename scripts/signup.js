@@ -34,34 +34,34 @@
     }
 
     if (user == "") {
-      document.getElementById("username").innerHTML =
+      document.getElementById("user").innerHTML =
         " ** Please fill the username field";
       return false;
     }
     if (user.length <= 3 || user.length > 20) {
-      document.getElementById("username").innerHTML =
+      document.getElementById("user").innerHTML =
         " ** Username lenght must be between 3 and 20";
       return false;
     }
     if (!isNaN(user)) {
-      document.getElementById("username").innerHTML =   
+      document.getElementById("user").innerHTML =   
         " ** only characters are allowed";
       return false;
     }
 
     if (pass == "") {
-      document.getElementById("passwords").innerHTML =
+      document.getElementById("pass").innerHTML =
         " *Please fill the password field";
       return false;
     }
     if (pass.length <= 5 || pass.length > 20) {
-      document.getElementById("passwords").innerHTML =
+      document.getElementById("pass").innerHTML =
         " ** Passwords lenght must be between  8 and 20";
       return false;
     }
 
     if (pass != confirmpass) {
-      document.getElementById("confrmpass").innerHTML =
+      document.getElementById("conpass").innerHTML =
         " ** Password Mismatch";
       return false;
     }
